@@ -30,8 +30,8 @@ PokedexEntryPointers:
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw CrobatDexEntry
+	dw RhyperiorDexEntry
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -489,6 +489,13 @@ GolbatDexEntry:
 	db 5,3
 	dw 1210
 	text_far _GolbatDexEntry
+	text_end
+
+CrobatDexEntry:
+	db "BAT@"
+	db 5,11
+	dw 1650
+	text_far _CrobatDexEntry
 	text_end
 
 OddishDexEntry:
@@ -979,6 +986,13 @@ RhydonDexEntry:
 	db 6,3
 	dw 2650
 	text_far _RhydonDexEntry
+	text_end
+
+RhyperiorDexEntry:
+	db "DRILL@"
+	db 7,10
+	dw 6235
+	text_far _RhyperiorDexEntry
 	text_end
 
 ChanseyDexEntry:

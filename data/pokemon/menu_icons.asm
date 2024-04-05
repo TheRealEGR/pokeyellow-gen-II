@@ -42,6 +42,7 @@ MonPartyData:
 	nybble ICON_FAIRY     ; Wigglytuff
 	nybble ICON_MON       ; Zubat
 	nybble ICON_MON       ; Golbat
+	nybble ICON_MON       ; Crobat
 	nybble ICON_GRASS     ; Oddish
 	nybble ICON_GRASS     ; Gloom
 	nybble ICON_GRASS     ; Vileplume
@@ -112,6 +113,7 @@ MonPartyData:
 	nybble ICON_MON       ; Weezing
 	nybble ICON_QUADRUPED ; Rhyhorn
 	nybble ICON_MON       ; Rhydon
+	nybble ICON_MON       ; Rhyperior
 	nybble ICON_FAIRY     ; Chansey
 	nybble ICON_GRASS     ; Tangela
 	nybble ICON_MON       ; Kangaskhan

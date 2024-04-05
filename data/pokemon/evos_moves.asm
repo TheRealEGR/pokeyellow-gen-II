@@ -40,8 +40,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw CrobatEvosMoves
+	dw RhyperiorEvosMoves
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -204,7 +204,7 @@ EvosMovesPointerTable:
 
 RhydonEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 55, RHYPERIOR
 ; Learnset
 	db 30, STOMP
 	db 35, TAIL_WHIP
@@ -554,16 +554,28 @@ TangelaEvosMoves:
 	db 48, GROWTH
 	db 0
 
-MissingNo1FEvosMoves:
+CrobatEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 10, SUPERSONIC
+	db 15, BITE
+	db 21, CONFUSE_RAY
+	db 33, WING_ATTACK
+	db 44, HAZE
+	db 55, SLUDGE
 	db 0
 
-MissingNo20EvosMoves:
+RhyperiorEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 30, STOMP
+	db 35, TAIL_WHIP
+	db 40, FURY_ATTACK
+	db 48, HORN_DRILL
+	db 55, LEER
+	db 64, TAKE_DOWN
 	db 0
 
 GrowlitheEvosMoves:
@@ -628,7 +640,7 @@ SlowpokeEvosMoves:
 
 KadabraEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, ALAKAZAM
+	db EVOLVE_LEVEL, 36, ALAKAZAM
 	db 0
 ; Learnset
 	db 16, CONFUSION
@@ -641,7 +653,7 @@ KadabraEvosMoves:
 
 GravelerEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, GOLEM
+	db EVOLVE_LEVEL, 42, GOLEM
 	db 0
 ; Learnset
 	db 11, DEFENSE_CURL
@@ -667,7 +679,7 @@ ChanseyEvosMoves:
 
 MachokeEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, MACHAMP
+	db EVOLVE_LEVEL, 44, MACHAMP
 	db 0
 ; Learnset
 	db 20, LOW_KICK
@@ -1567,7 +1579,7 @@ HypnoEvosMoves:
 
 GolbatEvosMoves:
 ; Evolutions
-	db 0
+	db EVOLVE_LEVEL, 38, CROBAT
 ; Learnset
 	db 10, SUPERSONIC
 	db 15, BITE
@@ -1720,7 +1732,7 @@ MissingNo92EvosMoves:
 
 HaunterEvosMoves:
 ; Evolutions
-	db EVOLVE_TRADE, 1, GENGAR
+	db EVOLVE_LEVEL, 40, GENGAR
 	db 0
 ; Learnset
 	db 29, HYPNOSIS
